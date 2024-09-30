@@ -44,3 +44,31 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Бекенд
+
+Створи свій персональний бекенд для розробки за допомогою UI-сервісу [mockapi.io](mockapi.io). Зареєструйся використовуючи свій обліковий запис GitHub. Створи ресурс `contacts` щоб отримати ендпоінт `/contacts`. Використай конструктор ресурсу та опиши об'єкт контакту як на ілюстрації.
+![alt text](api.png)
+
+## Форма Стану
+
+Додай у стан Redux обробку індикатора завантаження та помилки. Для цього зміни форму стану.
+
+    {
+      contacts: {
+        items: [],
+        isLoading: false,
+        error: null
+      },
+      filter: ""
+    }
+
+## Операції
+
+Використовуй функцію [createAsyncThunk](https://redux-toolkit.js.org/api/createAsyncThunk) для оголошення асинхронних генераторів екшенів та виконання HTTP-запитів. Обробку екшенів та зміну даних у стані Redux зроби за допомогою [createSlice](https://redux-toolkit.js.org/api/createSlice).
+
+Оголоси наступні операції:
+
+- fetchContacts - одержання масиву контактів (метод GET) запитом. Базовий тип екшену `"contacts/fetchAll"`.
+- addContact - додавання контакту (метод POST). Базовий тип екшену `"contacts/addContact"`.
+- deleteContact - видалення контакту (метод DELETE). Базовий тип екшену `"contacts/deleteContact"`.
