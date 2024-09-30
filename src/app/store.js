@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-
 import { setupListeners } from "@reduxjs/toolkit/query";
-import { filtersSlice } from "features/filters/filtersSlice";
+
 import { loginApi } from "features/login/loginSlice";
 import { tasksApi } from "features/tasks/tasksSlice";
+import { filtersSlice } from "features/filters/filtersSlice";
 
 export const store = configureStore({
   reducer: {
