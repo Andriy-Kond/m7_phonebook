@@ -7,7 +7,6 @@ function Filter() {
   const filter = useSelector(selectFilters);
 
   const handleFilter = e => {
-    console.log(e.target.value);
     dispatch(setFilter(e.target.value));
   };
 
